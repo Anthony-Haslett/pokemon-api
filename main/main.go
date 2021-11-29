@@ -8,16 +8,17 @@ import (
 
 // pokemon represents data about a record pokemon.
 type pokemon struct {
-	ID     string  `json:"id"`
-	Name string  `json:"name"`
+	ID          string `json:"id"`
+	Name        string `json:"name"`
 	Description string `json:"description"`
+	ImageURL    string `json:"imageUrl"`
 }
 
 // pokemons slice to seed record pokemon data.
 var pokemons = []pokemon{
-	{ID: "1", Name: "Pikachu", Description: "Zap zap, bap bap"},
-	{ID: "2", Name: "Charizard", Description: "Big and fiery"},
-	{ID: "2", Name: "Snorlax", Description: "Lazy so and so"},
+	{ID: "1", Name: "Pikachu", Description: "Zap zap, bap bap", ImageURL: "https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/"},
+	{ID: "2", Name: "Charizard", Description: "Big and fiery", ImageURL: "https://static.wikia.nocookie.net/sonicpokemon/images/b/bf/Charizard_AG_anime.png"},
+	{ID: "2", Name: "Snorlax", Description: "Lazy so and so", ImageURL: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png"},
 }
 
 func main() {
